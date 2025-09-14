@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background-color: #6CD0D0;
+}
+div.parent-container{
+    width: 218.5vh;
+}
+
+div.container{
+    justify-self: center;
+    padding-top: 15em;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+div li{
+    list-style: circle;
+}
+div input{
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 10px;
+}
+div button{
+    background-color: rgb(0, 59, 110);
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #1d0965;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+}
+.theBTN{
+    position: relative;
+    left: 5rem;
+}
+li.checked{
+    color: aqua;
+    text-decoration: line-through;
+    border-radius: 5px;
+    width: fit-content;
+}
+li.content{
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    width: fit-content;
+    padding: 10px;
+    margin-top: 10px;
+}
