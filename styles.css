@@ -1,71 +1,24 @@
-body{
+*{
     margin: 0;
     padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
     color: #fff;
     text-align: center;
     background-color: #6CD0D0;
+    width:100%;
 }
-div.parent-container{
-    width: 218.5vh;
-}
-@media (max-width: 820px) {
-    /* Styles to be applied when the screen width is 768px or less */
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    body{
-        text-align: left;
-    }
-    div.parent-container{
-        width: 100%;
-    }
-    div.container{
-        justify-self: left;
-        padding-top: 2.5em;
-        border-radius: 10px;
-        flex-direction: column;
-    }
 
-    div input{
-        box-sizing: border-box;
-        padding: 15px;
-        border-radius: 5px;
-    }
-    div button{
-        background-color: rgb(0, 59, 110);
-        padding: 5px;
-        border-radius: 2.5px;
-        border-color: #1d0965;
-        color: #fff;
-        cursor: pointer;
-        margin: 2.5px;
-    }
-    .theBTN{
-        position: relative;
-        left: 2.5rem;
-    }
-    li.checked{
-        color: aqua;
-        text-decoration: line-through;
-        border-radius: 2.5px;
-        width: fit-content;
-    }
-    li.content{
-        background-color: rgb(0, 0, 0);
-        border-radius: 2.5px;
-        width: fit-content;
-        padding: 5px;
-        margin-top: 5px;
-    }
-  }
 div.container{
     justify-self: center;
-    padding-top: 15em;
+    padding-top: 5rem;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
 }
+
 div li{
     list-style: circle;
 }
@@ -73,6 +26,8 @@ div input{
     box-sizing: border-box;
     padding: 30px;
     border-radius: 10px;
+    width: 100dvh;
+    padding: min(5em, 8%);
 }
 div button{
     background-color: rgb(0, 59, 110);
@@ -91,13 +46,39 @@ li.checked{
     color: aqua;
     text-decoration: line-through;
     border-radius: 5px;
-    width: fit-content;
+    width: 100dvh;
+    padding: min(5em, 8%);
 }
 li.content{
     background-color: rgb(0, 0, 0);
     border-radius: 5px;
-    width: fit-content;
-    padding: 10px;
+    width: 100dvh;
+    padding: min(5em, 8%);
     margin-top: 10px;
-
 }
+
+@media (max-width: 820px) {
+    *{
+        margin: auto;
+    }
+    div.container{
+        padding-top: 2.5rem;
+        border-radius: 10px;
+        flex-direction: column;
+    }
+
+    div input{
+        box-sizing: border-box;
+        padding: 15px;
+        border-radius: 5px;
+    }
+    li.checked{
+        width: 80dvh;
+    }
+    li.content{
+        background-color: rgb(0, 0, 0);
+        border-radius: 5px;
+        width: auto;
+        margin-top: 10px;
+    }
+  }
